@@ -1,0 +1,7 @@
+package com.webvue.ecom.domain;
+
+public class Customer extends BaseEntity<Long>{
+   private String email;
+   private String address;
+   
+}

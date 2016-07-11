@@ -1,0 +1,5 @@
+package com.webvue.ecom;
+
+public class BaseIntegrationTest {
+
+}

@@ -1,0 +1,8 @@
+package com.webvue.ecom;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = { RootContextConfiguration.class })
+@Commit
+public class BaseIntegrationTest {
+
+}

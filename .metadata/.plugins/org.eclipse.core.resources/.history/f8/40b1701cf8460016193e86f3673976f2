@@ -1,0 +1,17 @@
+package com.webvue.ecom.domain;
+
+import java.util.Collection;
+
+public class Customer extends BaseEntity<Long> {
+
+   private static final long serialVersionUID = 1L;
+
+   private String            name;
+   private String            email;
+   private String            phone;
+   private String            address;
+
+   private Collection<Order> orders;
+   
+   
+}

@@ -1,0 +1,10 @@
+package com.webvue.ecom.domain;
+
+import java.util.Collection;
+
+public class User {
+   private String           username;
+   private String           password;
+   private boolean          active;
+   private Collection<Role> role;
+}

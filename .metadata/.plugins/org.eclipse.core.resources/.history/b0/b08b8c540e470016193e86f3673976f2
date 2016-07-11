@@ -1,0 +1,7 @@
+package com.webvue.ecom.domain;
+
+import java.io.Serializable;
+
+public class Cart implements Serializable {
+
+}

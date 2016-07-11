@@ -1,0 +1,17 @@
+package com.webvue.ecom.domain;
+
+import java.math.BigDecimal;
+
+public class Item extends BaseEntity<Long> {
+
+   private static final long serialVersionUID = 1L;
+
+   private String            itemNumber;
+   private String            itemName;
+   private String            itemDescription;
+   private BigDecimal        price;
+   private Integer           quantity;
+   private boolean           selected;
+   private Category          category;
+
+}

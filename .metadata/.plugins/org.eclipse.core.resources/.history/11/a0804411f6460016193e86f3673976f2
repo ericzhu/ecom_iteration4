@@ -1,0 +1,7 @@
+package com.webvue.ecom.domain;
+
+public class Item extends BaseEntity<Long>{
+
+   private static final long serialVersionUID = 1L;
+
+}

@@ -1,0 +1,42 @@
+package com.webvue.ecom.domain;
+
+import java.util.Collection;
+import java.util.Date;
+
+public class Order extends BaseEntity<Long> {
+
+   private static final long     serialVersionUID = 1L;
+
+   private Date                  orderDate;
+   private Collection<OrderLine> orderLines;
+   private Customer              customer;
+
+   public Order(Customer customer) {
+      super();
+      this.customer = customer;
+   }
+
+   public Date getOrderDate() {
+      return orderDate;
+   }
+
+   public void setOrderDate(Date orderDate) {
+      this.orderDate = orderDate;
+   }
+
+   public Collection<OrderLine> getOrderLines() {
+      return orderLines;
+   }
+
+   public void setOrderLines(Collection<OrderLine> orderLines) {
+      this.orderLines = orderLines;
+   }
+
+   public Customer getCustomer() {
+      return customer;
+   }
+
+   public void setCustomer(Customer customer) {
+      this.customer = customer;
+   }
+}
