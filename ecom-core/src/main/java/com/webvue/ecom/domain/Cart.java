@@ -1,6 +1,7 @@
 package com.webvue.ecom.domain;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +24,10 @@ public class Cart implements Serializable {
       else {
          cartItems.put(item.getId(), new OrderLine(item, quantity, item.getPrice()));
       }
+   }
+   
+   public Collection<OrderLine> getItems() {
+      return cartItems.values();
    }
 
 }
